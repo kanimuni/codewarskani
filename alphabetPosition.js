@@ -40,14 +40,16 @@ function alphabetPosition(text) {
   simpleTxtLength = simpleTxt.length;
   for(var i=0; i<simpleTxtLength; i++) {
     if(lookUpObject.hasOwnProperty(simpleTxt[i])) {
-      if(i === 0) {
+      if(tmpTxt === "") {
         tmpTxt += lookUpObject[simpleTxt[i]];
       } else {
         tmpTxt += " " + lookUpObject[simpleTxt[i]];
-      }  
-    }  
+      }
+    }
   }
   
   text = tmpTxt;
   return text;
-};
+}
+
+console.log(alphabetPosition("The sunset sets at twelve o' clock."));
