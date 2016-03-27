@@ -47,7 +47,6 @@ function alphabetPosition(text) {
       }
     }
   }
-  
   text = tmpTxt;
   return text;
 }
